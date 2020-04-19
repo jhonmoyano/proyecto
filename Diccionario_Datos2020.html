@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="DicDat" />
+    <meta name="description" content="BD mydb" />
+    <title>mydb Diccionario</title>
+    <style type="text/css">
+    table{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    abbr{
+        cursor: help;
+    }
+    table, td, th{
+        border-style: solid;
+        border-width: 1px;
+    }
+    table caption{
+        font-size: 120%;
+        font-weight: bold;
+    }
+    caption{
+        color: black;
+    }
+    td, th{
+        border-color: silver;
+    }
+    tr:hover{
+        color: #333;
+        background-color: #F2F2F2;
+    }
+    th{
+        background-color: silver;
+    }
+    td{
+        color: gray;
+    }
+    ul{
+        font-style: italic;
+    }
+    #title-sect{
+        color: gray;
+        text-align: right;
+    }
+    .proj-desc{
+        text-align: right;
+    }
+    </style>
+</head>
+<body>
+<div id="title-sect">
+<h1>BD mydb<br> Diccionario de Datos</h1>
+<p>
+<em>2020-04-19</em>
+</p>
+<p class="proj-desc">
+<em></em>
+</p>
+</div>
+<h2>Índice</h2>
+<ul>
+<li><a href='#administrador'>administrador</a></li>
+<li><a href='#alumno'>alumno</a></li>
+<li><a href='#docente'>docente</a></li>
+<li><a href='#maquina'>maquina</a></li>
+<li><a href='#p.administrativo'>p.administrativo</a></li>
+<li><a href='#p.aseo'>p.aseo</a></li>
+<li><a href='#p.vigilancia'>p.vigilancia</a></li>
+<li><a href='#tipo de documento'>tipo de documento</a></li>
+<li><a href='#usuario'>usuario</a></li>
+<li><a href='#visitante'>visitante</a></li>
+</ul>
+<table id='administrador'>
+<caption>administrador</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idadministrador</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Id del administrador</td>
+</tr>
+<table id='alumno'>
+<caption>alumno</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idalumno</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del alumno</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>igresar tipo de documento del alumno</td>
+</tr>
+<table id='docente'>
+<caption>docente</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>iddocente</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del docente</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del docente</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del docente</td>
+</tr>
+<table id='maquina'>
+<caption>maquina</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idmaquina</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>idp maquina</td>
+</tr>
+<tr>
+    <td>tarjeta</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>tarjeta</td>
+</tr>
+<tr>
+    <td>administrador_idadministrador</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Administrador </td>
+</tr>
+<table id='p.administrativo'>
+<caption>p.administrativo</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idp.administrativo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del administrador</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documeto del personal administrativo</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documeto del personal administrativo</td>
+</tr>
+<table id='p.aseo'>
+<caption>p.aseo</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idp.aseo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id aseo</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del personal de aseo</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del personal de aseo</td>
+</tr>
+<tr>
+    <td>usuario_idusuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del  usuario</td>
+</tr>
+<tr>
+    <td>usuario_administrador_idadministrador</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del administraor </td>
+</tr>
+<table id='p.vigilancia'>
+<caption>p.vigilancia</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idp.vigilancia</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>idp personal de vigiliancia</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>Ingresar tipo de documento</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento</td>
+</tr>
+<tr>
+    <td>usuario_idusuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>identificacion de usuario</td>
+</tr>
+<tr>
+    <td>usuario_administrador_idadministrador</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td></td>
+</tr>
+<table id='tipo de documento'>
+<caption>tipo de documento</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del tipo de documeto</td>
+</tr>
+<tr>
+    <td>cedula</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar cedula</td>
+</tr>
+<tr>
+    <td>cedula_extranjera</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar cedula_extranjera</td>
+</tr>
+<tr>
+    <td>tarjeta_de_identidad</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>igresar tarjeta de identidad</td>
+</tr>
+<tr>
+    <td>documento_nacional_de_identificacion</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar documento nacionalidad de identificacion</td>
+</tr>
+<tr>
+    <td>numero_de_identificacion_tributaria</td>
+    <td>VARCHAR(30)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar numero de idenficacion tributaria</td>
+</tr>
+<table id='usuario'>
+<caption>usuario</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idusuario</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>is usuario</td>
+</tr>
+<tr>
+    <td>nombre</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar nombre</td>
+</tr>
+<tr>
+    <td>apellido</td>
+    <td>VARCHAR(45)</td>
+    <td>&nbsp;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar apellido</td>
+</tr>
+<tr>
+    <td>administrador_idadministrador</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del administrador</td>
+</tr>
+<tr>
+    <td>alumno_idalumno</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del alumno</td>
+</tr>
+<tr>
+    <td>alumno_tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>alumno ingresar tipo de documento</td>
+</tr>
+<tr>
+    <td>visitante_idvisitante</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del visitante</td>
+</tr>
+<tr>
+    <td>visitante_tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento </td>
+</tr>
+<tr>
+    <td>visitante_tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de comento</td>
+</tr>
+<tr>
+    <td>p.administrativo_idp.administrativo</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ind del personal administrativo</td>
+</tr>
+<tr>
+    <td>p.administrativo_tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del personal administrativo</td>
+</tr>
+<tr>
+    <td>p.administrativo_tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de docomento del personal administrativo</td>
+</tr>
+<tr>
+    <td>docente_iddocente</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id del docente</td>
+</tr>
+<tr>
+    <td>docente_tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del docente</td>
+</tr>
+<tr>
+    <td>docente_tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del docente</td>
+</tr>
+<table id='visitante'>
+<caption>visitante</caption>
+<tr><td colspan='11'></td></tr>
+<tr>
+    <th>Columna</th>
+    <th>Tipo de dato</th>
+    <th><abbr title='Llave Primaria'>PK</abbr></th>
+    <th><abbr title='No Nulo'>NN</abbr></th>
+    <th><abbr title='Único'>UQ</abbr></th>
+    <th><abbr title='Binario'>BIN</abbr></th>
+    <th><abbr title='Unsigned'>UN</abbr></th>
+    <th><abbr title='Zero Fill'>ZF</abbr></th>
+    <th><abbr title='Auto Incremental'>AI</abbr></th>
+    <th>Default</th>
+    <th>Commentarios</th>
+</tr>
+<tr>
+    <td>idvisitante</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>id de visitante</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del visitante</td>
+</tr>
+<tr>
+    <td>tipo de documento_idtipo de documento1</td>
+    <td>INT</td>
+    <td>&#10004;</td>
+    <td>&#10004;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class='attr'>&nbsp;</td>
+    <td></td>
+    <td>ingresar tipo de documento del visitante</td>
+</tr>
+</table>
+</body>
+</html>
